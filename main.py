@@ -3,12 +3,12 @@ pc_choice = randint(1,50)
 arr = [1,2,3,4,5,6]
 
 def casino():
-     user_P = 100
+     user_P = 500
      play = True
      while play:
           user_c = int(input(f"chose number(1-50){user_P}:"))
           if user_P <= 0:
-               print(f"FUCK LUSER{user_P}")
+               print(f"FUCK LUSER{user_P},pc_choice:{pc_choice}")
                play = False
           elif user_c > pc_choice:
                user_P = user_P - 20
@@ -23,7 +23,7 @@ def casino():
                while play:
                     user_c = int((input(f"chose number(1-50){user_P}:")))
                     if user_P <= 0:
-                         print(f"FUCK LUSER{user_P}")
+                         print(f"FUCK LUSER{user_P}, pc_choice:{pc_choice2}")
                          play = False
                     elif user_c > pc_choice2:
                          user_P = user_P - 20
